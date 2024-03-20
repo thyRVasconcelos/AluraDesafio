@@ -28,10 +28,15 @@ main {
   justify-content: space-around;
 }
 
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .text-area {
   border: none;
   color: var(--cor-primaria);
-  text-transform: lowercase;
   font-size: 2rem;
   margin: 5.62rem;
 }
@@ -47,15 +52,43 @@ main {
 .informacao {
   display: flex;
   margin-top: 10rem;
+  margin-left: 5.62rem;
 }
 
-.informacao, h6{
+.informacao h6 {
   color: var(--cor-quaternaria);
   padding-left: 0.75rem;
+  font-family: var(--fonte-principal);
   font-size: 0.75rem;
 }
 
+.buttons {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 5.62rem;
+}
 
+.btn-cripto {
+  border: 1px solid var(--cor-primaria);
+  border-radius: 24px;
+  height: 4.18rem;
+  width: 20.5rem;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+}
+
+.btn-descripto {
+  border: 1px solid var(--cor-primaria);
+  border-radius: 24px;
+  height: 4.18rem;
+  width: 20.5rem;
+  margin-left: 0.75rem;
+  font-size: 1rem;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+}
 
 .mensagem {
   background: var(--cor-terciaria);
@@ -67,6 +100,15 @@ main {
   color: var(--cor-primaria);
   margin: 1.25rem;
   padding: 1.25rem;
-  width: 75%;
-  height: 30rem;
+  width: 25rem;
+  height: 40rem;
+}
+
+.btn-copiar {
+  position: absolute;
+}
+
+footer {
+display: flex;
+background-color: var(--cor-quaternaria);
 }
